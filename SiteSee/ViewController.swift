@@ -12,9 +12,7 @@ class ViewController: UIViewController {
     
     //MARK: Properties
 
-    @IBOutlet weak var campInput: UITextField!
     @IBOutlet weak var siteSeeLabel: UILabel!
-    var userCampground: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +20,14 @@ class ViewController: UIViewController {
     }
     
     //MARK: Actions
-    @IBAction func addButton(sender: UIButton) {
-        siteSeeLabel.text = "Hello"
-    }
 
+    @IBAction func invokeModalDialogue(sender: UIButton) {
+    }
+    
     @IBAction func nextButton(sender: UIButton) {
         siteSeeLabel.text = "Site See"
-        userCampground = campInput.text!
     }
+    
+    
 }
 

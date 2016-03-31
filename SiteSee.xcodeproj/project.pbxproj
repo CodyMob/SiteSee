@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0EA0991CAD7A5900178D57 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EA0981CAD7A5900178D57 /* ModalViewController.swift */; };
 		0EE10F571CA2D1120015DC27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE10F561CA2D1120015DC27 /* AppDelegate.swift */; };
 		0EE10F591CA2D1120015DC27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE10F581CA2D1120015DC27 /* ViewController.swift */; };
 		0EE10F5C1CA2D1120015DC27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE10F5A1CA2D1120015DC27 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E0EA0981CAD7A5900178D57 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		0EE10F531CA2D1120015DC27 /* SiteSee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiteSee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EE10F561CA2D1120015DC27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EE10F581CA2D1120015DC27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				0EE10F5D1CA2D1120015DC27 /* Assets.xcassets */,
 				0EE10F5F1CA2D1120015DC27 /* LaunchScreen.storyboard */,
 				0EE10F621CA2D1120015DC27 /* Info.plist */,
+				0E0EA0981CAD7A5900178D57 /* ModalViewController.swift */,
 			);
 			path = SiteSee;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EE10F591CA2D1120015DC27 /* ViewController.swift in Sources */,
+				0E0EA0991CAD7A5900178D57 /* ModalViewController.swift in Sources */,
 				0EE10F571CA2D1120015DC27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +392,7 @@
 				0EE10F721CA2D1120015DC27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0EE10F731CA2D1120015DC27 /* Build configuration list for PBXNativeTarget "SiteSeeTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +401,7 @@
 				0EE10F751CA2D1120015DC27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
