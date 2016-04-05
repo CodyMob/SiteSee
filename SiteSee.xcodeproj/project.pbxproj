@@ -15,6 +15,8 @@
 		0EE10F611CA2D1120015DC27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EE10F5F1CA2D1120015DC27 /* LaunchScreen.storyboard */; };
 		0EE10F6C1CA2D1120015DC27 /* SiteSeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE10F6B1CA2D1120015DC27 /* SiteSeeTests.swift */; };
 		0EF2C5291CB4179800388E0B /* campData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EF2C5281CB4179800388E0B /* campData.json */; };
+		311402A91CB416F40040A2DF /* Campground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311402A81CB416F40040A2DF /* Campground.swift */; };
+		311402AB1CB41FE10040A2DF /* SearchCampgroundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311402AA1CB41FE10040A2DF /* SearchCampgroundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		0EE10F6B1CA2D1120015DC27 /* SiteSeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteSeeTests.swift; sourceTree = "<group>"; };
 		0EE10F6D1CA2D1120015DC27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EF2C5281CB4179800388E0B /* campData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = campData.json; sourceTree = "<group>"; };
+		311402A81CB416F40040A2DF /* Campground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Campground.swift; sourceTree = "<group>"; };
+		311402AA1CB41FE10040A2DF /* SearchCampgroundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCampgroundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				0EF2C5281CB4179800388E0B /* campData.json */,
 				0EE10F561CA2D1120015DC27 /* AppDelegate.swift */,
 				0EE10F581CA2D1120015DC27 /* ViewController.swift */,
+				311402AA1CB41FE10040A2DF /* SearchCampgroundsViewController.swift */,
+				311402A81CB416F40040A2DF /* Campground.swift */,
 				0EE10F5A1CA2D1120015DC27 /* Main.storyboard */,
 				0EE10F5D1CA2D1120015DC27 /* Assets.xcassets */,
 				0EE10F5F1CA2D1120015DC27 /* LaunchScreen.storyboard */,
@@ -206,7 +212,9 @@
 			files = (
 				0EE10F591CA2D1120015DC27 /* ViewController.swift in Sources */,
 				0E0EA0991CAD7A5900178D57 /* ModalViewController.swift in Sources */,
+				311402AB1CB41FE10040A2DF /* SearchCampgroundsViewController.swift in Sources */,
 				0EE10F571CA2D1120015DC27 /* AppDelegate.swift in Sources */,
+				311402A91CB416F40040A2DF /* Campground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
