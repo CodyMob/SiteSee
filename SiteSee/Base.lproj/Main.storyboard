@@ -71,11 +71,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="Im2-df-ddj" userLabel="Modal View">
-                                <rect key="frame" x="10" y="62" width="355" height="350"/>
+                                <rect key="frame" x="0.0" y="27" width="375" height="640"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f3B-Rk-BB7">
-                                        <rect key="frame" x="-12" y="8" width="46" height="30"/>
+                                        <rect key="frame" x="-2" y="43" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="X"/>
                                         <connections>
@@ -83,13 +83,13 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter campground name" textAlignment="natural" minimumFontSize="17" id="8jJ-qU-uXh">
-                                        <rect key="frame" x="24" y="84" width="260" height="30"/>
+                                        <rect key="frame" x="34" y="119" width="260" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Igk-HS-BHn">
-                                        <rect key="frame" x="283" y="84" width="46" height="30"/>
+                                        <rect key="frame" x="293" y="119" width="46" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="OK"/>
                                         <connections>
