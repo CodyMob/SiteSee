@@ -7,18 +7,36 @@
 //
 
 import UIKit
+import Foundation
 
-class SearchCampgroundsViewController: UIViewController {
+class SearchCampgroundsViewController: UIViewController, UISearchResultsUpdating {
+    
+    let searchController = UISearchController(searchResultsController: nil)
 
     @IBOutlet weak var tableView: UITableView!
     var campgrounds: [Campground]? {
        return DataProvider.sharedInstance.allCampground()
     }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        searchController.searchResultsUpdater = self
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = false
+        self.tableView.tableHeaderView = searchController.searchBar
+    }
+    
+    var filtered: [Campground]? = nil
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        self.filtered = self.campgrounds?.filter {
+            //True if facilityName contains search bar text (case-sensative)
+            $0.facilityName!.rangeOfString(searchController.searchBar.text!) != nil
+        }
+        
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,12 +50,19 @@ class SearchCampgroundsViewController: UIViewController {
 extension SearchCampgroundsViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if self.searchController.active {
+        return self.filtered?.count ?? 0
+        }
         return self.campgrounds?.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("campgroundCell")! as UITableViewCell
+        if self.searchController.active && self.searchController.searchBar.text != "" {
         cell.textLabel?.text = campgrounds?[indexPath.row].facilityName ?? "NO NAME FOR THIS FACILITY"
+        } else {
+            cell.textLabel?.text = campgrounds?[indexPath.row].facilityName ?? "NO NAME FOR THIS FACILITY"
+        }
         return cell
     }
 }
